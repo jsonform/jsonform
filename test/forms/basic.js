@@ -1,5 +1,4 @@
 $("#testform").jsonForm({
-<<<<<<< HEAD
   "schema":{
     "name":"Product",
     "properties":
@@ -7,12 +6,13 @@ $("#testform").jsonForm({
       "id":
       {
         "type":"number",
-        "description":"Product identifier",
+        "title":"Identifier",
+        "description":"Enter a valid product identifier",
         "required":true
       },
       "name":
       {
-        "description":"Name of the product",
+        "title":"Name of the product",
         "type":"string",
         "required":true
       },
@@ -23,10 +23,9 @@ $("#testform").jsonForm({
         "required":true
       },
       "gender":{
-         "type":"string",
-         'enum':["male","female"]
-      }
-      /*,
+        "type":"string",
+        "enum":["male","female"]
+      }/*,
       "tags":
       {
               "type":"array",
@@ -38,91 +37,33 @@ $("#testform").jsonForm({
     }
   },
   "elements":[
-    {
-      "key":"id",
-      "onBlur":function() {
-        alert();
-      }
-    },
+
     {
       "type":"fieldset",
+      "legend":"Test legend",
       "items":[
-        "name"
+        "name",
+        {
+          "key":"id",
+          "onBlur":function() {
+            alert();
+          }
+        }
+
       ]
     },
+    
+    
     "price",
-    "gender",
     {
-      "type":"submit"
-    }
-=======
-	"schema":{
-        "name":"Product",
-        "properties":
+      "type":"actions",
+      "items":[
         {
-                "id":
-                {
-                        "type":"number",
-                        "title":"Identifier",
-                        "description":"Enter a valid product identifier",
-                        "required":true
-                },
-                "name":
-                {
-                        "title":"Name of the product",
-                        "type":"string",
-                        "required":true
-                },
-                "price":
-                {
-                        "type":"number",
-                        "minimum":0,
-                        "required":true
-                }/*,
-                "tags":
-                {
-                        "type":"array",
-                        "items":
-                        {
-                                "type":"string"
-                        }
-                }*/
+          "type":"submit"
         }
-	},
-	"elements":[
-
-		{
-			"type":"fieldset",
-			"legend":"Test legend",
-			"items":[
-				"name",
-				{
-					"key":"id",
-					"onBlur":function() {
-						alert();
-					}
-				}
-
-			]
-		},
-		
-		
-		"price",
-		{
-			"type":"actions",
-			"items":[
-				{
-					"type":"submit"
-				}
-			]
-		}
-		
->>>>>>> 92dcedf4b23bf7c5ae06f634daba547ac6c41d14
+      ]
+    }
 
   ],
-  "onSubmit":function(values) {
-    
-  }
-  
+  "onSubmit":function(values) {}
 });
-
