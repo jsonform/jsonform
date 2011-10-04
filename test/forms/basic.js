@@ -36,6 +36,9 @@ $("#testform").jsonForm({
       }*/
     }
   },
+  "value":{
+    "price":42
+  },
   "elements":[
 
     {
@@ -46,6 +49,7 @@ $("#testform").jsonForm({
         {
           "key":"name",
           "type":"textarea",
+          "value":"ok",
           "onBlur":function() {
             alert();
           }
