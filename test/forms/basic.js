@@ -8,12 +8,13 @@ $("#testform").jsonForm({
                 "id":
                 {
                         "type":"number",
-                        "description":"Product identifier",
+                        "title":"Identifier",
+                        "description":"Enter a valid product identifier",
                         "required":true
                 },
                 "name":
                 {
-                        "description":"Name of the product",
+                        "title":"Name of the product",
                         "type":"string",
                         "required":true
                 },
