@@ -22,7 +22,7 @@ $("#testform").jsonForm({
                         "type":"number",
                         "minimum":0,
                         "required":true
-                },
+                }/*,
                 "tags":
                 {
                         "type":"array",
@@ -30,7 +30,7 @@ $("#testform").jsonForm({
                         {
                                 "type":"string"
                         }
-                }
+                }*/
         }
 	},
 	"elements":[
@@ -43,12 +43,11 @@ $("#testform").jsonForm({
 		{
 			"type":"fieldset",
 			"items":[
-				"name",
-				"price"
+				"name"
 
 			]
 		},
-		"tags",
+		"price",
 		{
 			"type":"submit"
 		}
