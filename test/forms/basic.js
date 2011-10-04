@@ -24,23 +24,15 @@ $("#testform").jsonForm({
       },
       "gender":{
         "type":"string",
-        "enum":["male","female"]
-      }/*,
-      "tags":
-      {
-              "type":"array",
-              "items":
-              {
-                      "type":"string"
-              }
-      }*/
+        "enum":["male", "female"]
+      }
     }
   },
   "value":{
-    "price":42
+    "price": 42,
+    "gender": "female"
   },
   "elements":[
-
     {
       "type":"fieldset",
       "legend":"Test legend",
@@ -57,7 +49,6 @@ $("#testform").jsonForm({
 
       ]
     },
-    
     "gender",
     "price",
     {
@@ -68,7 +59,6 @@ $("#testform").jsonForm({
         }
       ]
     }
-
   ],
-  "onSubmit":function(values) {}
+  "onSubmit": function(values) {}
 });
