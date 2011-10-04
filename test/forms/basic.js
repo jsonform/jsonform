@@ -35,23 +35,33 @@ $("#testform").jsonForm({
         }
 	},
 	"elements":[
-		{
-			"key":"id",
-			"onBlur":function() {
-				alert();
-			}
-		},
+
 		{
 			"type":"fieldset",
+			"legend":"Test legend",
 			"items":[
-				"name"
+				"name",
+				{
+					"key":"id",
+					"onBlur":function() {
+						alert();
+					}
+				}
 
 			]
 		},
+		
+		
 		"price",
 		{
-			"type":"submit"
+			"type":"actions",
+			"items":[
+				{
+					"type":"submit"
+				}
+			]
 		}
+		
 
 	],
 	"onSubmit":function(values) {
