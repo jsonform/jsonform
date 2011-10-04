@@ -42,9 +42,10 @@ $("#testform").jsonForm({
       "type":"fieldset",
       "legend":"Test legend",
       "items":[
-        "name",
+        "id",
         {
-          "key":"id",
+          "key":"name",
+          "type":"textarea",
           "onBlur":function() {
             alert();
           }
