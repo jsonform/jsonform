@@ -53,7 +53,7 @@ $("#testform").jsonForm({
       ]
     },
     
-    
+    "gender",
     "price",
     {
       "type":"actions",
