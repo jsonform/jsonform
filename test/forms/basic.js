@@ -32,7 +32,7 @@ $("#testform").jsonForm({
     "price": 42,
     "gender": "female"
   },
-  "elements":[
+  "form":[
     {
       "type":"fieldset",
       "legend":"Test legend",
