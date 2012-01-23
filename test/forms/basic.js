@@ -17,6 +17,12 @@ $("#testform").jsonForm({
         "maxLength":20,
         "required":true
       },
+      "shortname":
+      {
+        "title":"short name",
+        "type":"string",
+        "required":true
+      },
       "price":
       {
         "type":"number",
@@ -49,6 +55,10 @@ $("#testform").jsonForm({
         }
 
       ]
+    },
+    {
+      "key":"shortname",
+      "allowEmpty":true
     },
     "gender",
     "price",
