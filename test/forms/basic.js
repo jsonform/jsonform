@@ -29,6 +29,17 @@ $("#testform").jsonForm({
         "minimum":10,
         "required":true
       },
+      "opts":
+      {
+          "type":"array",
+          "title":"Options",
+          "uniqueItems":true,
+          "items":{
+            "type":"string",
+            "enum":["one","two","three"]
+          },
+          "default":["two","three"]
+      },
       "gender":{
         "type":"string",
         "enum":["male", "female"]
@@ -62,6 +73,15 @@ $("#testform").jsonForm({
     },
     "gender",
     "price",
+    {
+      "key":"opts",
+      "type":"checkboxes",
+      "titleMap":{
+        "one":"1. One",
+        "two":"2. Two",
+        "three":"3. Three"
+      }
+    },
     {
       "type":"actions",
       "items":[
