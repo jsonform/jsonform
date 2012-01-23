@@ -14,12 +14,13 @@ $("#testform").jsonForm({
       {
         "title":"Name of the product",
         "type":"string",
+        "maxLength":20,
         "required":true
       },
       "price":
       {
         "type":"number",
-        "minimum":0,
+        "minimum":10,
         "required":true
       },
       "gender":{
@@ -55,10 +56,13 @@ $("#testform").jsonForm({
       "type":"actions",
       "items":[
         {
-          "type":"submit"
+          "type":"submit",
+          "value":"OK"
         }
       ]
     }
   ],
-  "onSubmit": function(values) {}
+  "onSubmit": function(errors,values) {
+    console.log(errors,values);
+  }
 });
