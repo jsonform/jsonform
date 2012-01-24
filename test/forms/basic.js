@@ -38,7 +38,8 @@ $("#testform").jsonForm({
             "type":"string",
             "enum":["one","two","three"]
           },
-          "default":["two","three"]
+          "default":["two","three"],
+          "minItems":2
       },
       "gender":{
         "type":"string",
