@@ -32,6 +32,15 @@ $("#testform").jsonForm({
         "clientkey",
         "clientside"
       ]
+    },
+    {
+      "type": "actions",
+      "items": [
+        {
+          "type": "submit",
+          "value": "Submit"
+        }
+      ]
     }
   ],
   "onSubmit": function (errors,values) {
