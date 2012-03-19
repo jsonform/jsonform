@@ -44,6 +44,9 @@ $("#testform").jsonForm({
       "gender":{
         "type":"string",
         "enum":["male", "female"]
+      },
+      "flag": {
+        "type": "boolean"
       }
     }
   },
@@ -83,6 +86,7 @@ $("#testform").jsonForm({
         "three":"3. Three"
       }
     },
+    "flag",
     {
       "type":"actions",
       "items":[

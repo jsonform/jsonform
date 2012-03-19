@@ -46,6 +46,7 @@ $("#testform").jsonForm({
     "happy",
     {
       "type": "selectfieldset",
+      "title": "Search by",
       "items": [
         {
           "type": "optionfieldset",
