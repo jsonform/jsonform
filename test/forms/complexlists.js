@@ -107,6 +107,19 @@ $("#testform").jsonForm({
         "no"
       ]
     },
+    "enums": {
+      "title": "onChange in an array",
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "enum": [
+            "toto",
+            "tutu"
+          ]
+        }
+      ]
+    }
   },
   "form": [
     "simplearray",
@@ -150,8 +163,27 @@ $("#testform").jsonForm({
           "value": "Submit"
         }
       ]
+    },
+    {
+      "type": "array",
+      "title": "onChange in an array",
+      "items": [
+        {
+          "key": "enums[]",
+          "title": "Enum number XXXidxXXX",
+          "onChange": function () {
+            alert('turlututu');
+          }
+        }
+      ]
     }
   ],
+  "value": {
+    "enums": [
+      "toto",
+      "tutu"
+    ]
+  },
   "onSubmit": function (errors,values) {
     console.log(errors,values);
   }
