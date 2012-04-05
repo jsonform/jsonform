@@ -3,7 +3,6 @@ $("#testform").jsonForm({
     "user": {
       "title": "Username",
       "type": "string",
-      "required": true,
       "default": "toto"
     },
     "search": {
@@ -11,6 +10,39 @@ $("#testform").jsonForm({
       "type": "string",
       "default": "Joshfire",
       "required": true
+    },
+    "array": {
+      "type": "array",
+      "required": true,
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "object": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "child": {
+          "type": "string"
+        }
+      }
+    },
+    "string": {
+      "type": "string",
+      "required": true
+    },
+    "boolean": {
+      "type": "boolean",
+      "required": true
+    },
+    "any": {
+      "type": "any",
+      "required": true
+    },
+    "notincluded": {
+      "type": "string"
     }
   },
   "form": [
@@ -28,6 +60,8 @@ $("#testform").jsonForm({
   "onSubmit": function (errors,values) {
     console.log(errors, JSON.stringify(values, null, 2));
     window.JSONForm.setDefaultValues(values, this.schema);
+    console.log(errors, JSON.stringify(values, null, 2));
+    window.JSONForm.setDefaultValues(values, this.schema, true);
     console.log(errors, JSON.stringify(values, null, 2));
   }
 });
