@@ -77,6 +77,7 @@ $("#testform").jsonForm({
     },
     "gender",
     "price",
+    "flag",
     {
       "key":"opts",
       "type":"checkboxes",
@@ -86,7 +87,6 @@ $("#testform").jsonForm({
         "three":"3. Three"
       }
     },
-    "flag",
     {
       "type":"actions",
       "items":[
