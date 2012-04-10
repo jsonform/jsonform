@@ -34,6 +34,22 @@ $("#testform").jsonForm({
       ]
     },
     {
+      "type": "advancedfieldset",
+      "items": [
+        {
+          "template": "<p>This text should belong to an \"Advanced options\" expandable section.</p>"
+        }
+      ]
+    },
+    {
+      "type": "authfieldset",
+      "items": [
+        {
+          "template": "<p>This text should belong to an \"Authentication settings\" expandable section.</p>"
+        }
+      ]
+    },
+    {
       "type": "actions",
       "items": [
         {
