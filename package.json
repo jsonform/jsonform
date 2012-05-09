@@ -1,10 +1,10 @@
 {
-  "name" : "JSON Form",
+  "name" : "JSON-Form",
   "version" : "1.0.0",
   "main" : "./lib/jsonform.js",
   "user" : "Joshfire",
   "domain": "joshfire.com",
-  "description": "HTML Form generator from a structured data model expressed using a JSON schema, possibly completed by a form layout description",
+  "description": "Client-side JavaScript library that generates HTML forms from structured data models expressed using a JSON schema, possibly completed by a form layout description.",
   "keywords": [
     "JSON",
     "schema",
