@@ -11,34 +11,11 @@ var tests = [
             title: 'Array item'
           }
         }
-      }
-    }
-  },
-  {
-    name: 'simple form',
-    jsonform: {
-      schema: {
-        arr: {
-          type: 'array',
-          title: 'An array',
-          items: {
-            type: 'string',
-            title: 'Array item'
-          }
-        }
       },
       form: [
         {
-          type: 'array',
-          items: [
-            {
-              type: 'fieldset',
-              title: 'Great array item',
-              items: [
-                'arr[]'
-              ]
-            }
-          ]
+          type: 'tabarray',
+          key: 'arr'
         }
       ]
     }
@@ -58,7 +35,7 @@ var tests = [
       },
       form: [
         {
-          type: 'array',
+          type: 'tabarray',
           items: [
             {
               type: 'fieldset',
@@ -76,7 +53,7 @@ var tests = [
     }
   },
   {
-    name: 'Default value',
+    name: 'Value as legend',
     jsonform: {
       schema: {
         arr: {
@@ -91,15 +68,52 @@ var tests = [
       },
       form: [
         {
-          type: 'array',
+          type: 'tabarray',
           items: [
             {
               type: 'fieldset',
               title: 'Number {{idx}}',
+              legend: '{{idx}}. {{value}}',
               items: [
                 {
                   key: 'arr[]',
-                  title: 'Item {{idx}}'
+                  title: 'Item {{idx}}',
+                  valueInLegend: true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    name: 'Value as legend',
+    jsonform: {
+      schema: {
+        arr: {
+          type: 'array',
+          title: 'An array',
+          items: {
+            type: 'string',
+            title: 'Array item'
+          }
+        }
+      },
+      form: [
+        {
+          type: 'tabarray',
+          items: [
+            {
+              type: 'fieldset',
+              title: 'Number {{idx}}',
+              legend: '{{idx}}. {{value}}',
+              items: [
+                {
+                  key: 'arr[]',
+                  title: 'Item {{idx}}',
+                  value: 'Hello number {{idx}}',
+                  valueInLegend: true
                 }
               ]
             }
