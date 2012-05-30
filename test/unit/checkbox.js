@@ -17,7 +17,7 @@ var tests = [
         check: {
           type: 'boolean',
           title: 'Title',
-          default: true
+          'default': true
         }
       },
       form: [
