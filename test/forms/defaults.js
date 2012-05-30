@@ -18,6 +18,10 @@ $("#testform").jsonForm({
         {
           "type": "string"
         }
+      ],
+      "default": [
+        "hey",
+        "dude"
       ]
     },
     "object": {
