@@ -130,10 +130,14 @@ $("#testform").jsonForm({
     "arrayarray",
     {
       "type": "array",
-      "items": [
-        "arrayarraylayout[].key1",
-        "arrayarraylayout[].key2"
-      ]
+      "items": {
+        "type": "fieldset",
+        "legend": "Keys",
+        "items": [
+          "arrayarraylayout[].key1",
+          "arrayarraylayout[].key2"
+        ]
+      }
     },
     {
       "type": "checkboxes",
