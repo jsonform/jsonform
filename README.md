@@ -17,7 +17,8 @@ Getting started
 
 The example below creates a form that asks for the user's name and age. The user's name is a required field, while the age is optional.
 
-```<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -58,7 +59,8 @@ The example below creates a form that asks for the user's name and age. The user
       });
     </script>
   </body>
-</html>```
+</html>
+```
 
 Loading this page in a browser renders a form with two input fields and a submit button. The ```onSubmit``` function is called upon form submission. If you press "Submit" without entering values or if the age you enter is not a number, error messages appear next to the input fields.
 
