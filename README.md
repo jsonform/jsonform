@@ -82,11 +82,11 @@ At a minimum, the JSON Form library depends on:
 
 The JSON Form library may require further libraries, depending on the features you need for the forms you need to render. In particular:
 - [Bootstrap](http://twitter.github.com/bootstrap/) v2.0.3 or above is more or less needed (unless you enjoy ugly forms, that is) if you don't provide your own styles. JSON Form only needs the ```bootstrap.css``` file.
-- The [JSON Schema Validator](https://github.com/garycourt/JSV) is used to detect and report validation errors upon form submission. The [deps/opt](deps/opt) folder contains a "build" of the JSON Schema Validator for use in JSON Form.
+- The [JSON Schema Validator](https://github.com/garycourt/JSV) is used to detect and report validation errors upon form submission. The [deps/opt](https://github.com/joshfire/jsonform/tree/master/deps/opt) folder contains a "build" of the JSON Schema Validator for use in JSON Form.
 - [jQuery UI Sortable](http://jqueryui.com/demos/sortable/) v1.8.20 or above is required for drag-and-drop support within arrays and tabarrays. Note the plugin itself depends on jQuery IU Core, jQuery UI Mouse, and jQuery UI Widget.
 - [wysihtml5](http://jhollingworth.github.com/bootstrap-wysihtml5/) is required if the form uses ```wysihtml5``` textarea fields.
 
-All of these libraries are in the [deps](deps) folder, although you might want to check their respective Web site for more recent versions.
+All of these libraries are in the [deps](https://github.com/joshfire/jsonform/tree/master/deps) folder, although you might want to check their respective Web site for more recent versions.
 
 NB: JSON Form also uses ```JSON.parse``` and ```JSON.stringify``` which is normally already natively supported by all modern browsers. You may use a JSON library otherwise.
 
@@ -94,6 +94,6 @@ NB: JSON Form also uses ```JSON.parse``` and ```JSON.stringify``` which is norma
 License
 -------
 
-The JSON Form library is licensed under the [MIT license](LICENSE).
+The JSON Form library is licensed under the [MIT license](https://raw.github.com/joshfire/jsonform/master/LICENSE).
 
 All the libraries that JSON Form may depend on are licensed under the MIT license, except for the JSON Schema Validator, licensed under the BSD 3 Clause license.
