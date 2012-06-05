@@ -168,5 +168,39 @@ var tests = [
         }
       ]
     }
+  },
+  {
+    name: 'sleek',
+    jsonform: {
+      schema: {
+        choice: {
+          type: 'string',
+          title: 'Icon',
+          "enum": [
+            "app/images/tv-contact.png",
+            "app/images/tv-events.png",
+            "app/images/tv-map.png",
+            "app/images/tv-news.png",
+            "app/images/tv-photos.png",
+            "app/images/tv-play.png",
+            "app/images/tv-products.png",
+            "app/images/tv-sounds.png",
+            "app/images/tv-statuses.png",
+            "app/images/tv-videos.png",
+            "app/images/tv-zoom.png"
+          ]
+        }
+      },
+      form: [
+        {
+          key: 'choice',
+          type: 'imageselect',
+          imageButtonClass: 'btn-inverse',
+          imagePrefix: 'http://exports.platform.joshfire.com.s3.amazonaws.com/template/official/4f/cc/4fccd335ef88120db50000dd/df5d0b32d95b/',
+          imageWidth: 32,
+          imageHeight: 64
+        }
+      ]
+    }
   }
 ];
