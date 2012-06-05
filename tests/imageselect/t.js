@@ -238,5 +238,40 @@ var tests = [
         }
       ]
     }
-  }
+  },
+  {
+    name: 'suffix',
+    jsonform: {
+      schema: {
+        choice: {
+          type: 'string',
+          title: 'Icon',
+          "enum": [
+            "contact",
+            "events",
+            "map",
+            "news",
+            "photos",
+            "play",
+            "products",
+            "sounds",
+            "statuses",
+            "videos",
+            "zoom"
+          ]
+        }
+      },
+      form: [
+        {
+          key: 'choice',
+          type: 'imageselect',
+          imageButtonClass: 'btn-inverse',
+          imagePrefix: 'http://exports.platform.joshfire.com.s3.amazonaws.com/template/official/4f/cc/4fccd335ef88120db50000dd/df5d0b32d95b/app/images/tv-',
+          imageSuffix: '.png',
+          imageWidth: 32,
+          imageHeight: 64
+        }
+      ]
+    }
+  },
 ];
