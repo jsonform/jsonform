@@ -46,5 +46,38 @@ var tests = [
         }
       ]
     }
+  },
+  {
+    name: 'titleMap',
+    jsonform: {
+      "schema": {
+        "menu": {
+          "type": "array",
+          "title": "Options",
+          "items": {
+            "type": "string",
+            "title": "Option",
+            "enum": [
+              "starter",
+              "maincourse",
+              "cheese",
+              "dessert"
+            ]
+          }
+        }
+      },
+      "form": [
+        {
+          "key": "menu",
+          "type": "checkboxes",
+          "titleMap": {
+            "starter": "I'd like a starter",
+            "maincourse": "Thumbs up for a main course",
+            "cheese": "Cheddar rules!",
+            "dessert": "I'll take some dessert, of course"
+          }
+        }
+      ]
+    }
   }
 ];

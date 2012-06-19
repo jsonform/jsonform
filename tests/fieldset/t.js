@@ -100,5 +100,39 @@ var tests = [
         }
       ]
     }
+  },
+  {
+    name: 'expandable',
+    jsonform: {
+      "schema": {
+        "comment": {
+          "type": "string",
+          "title": "Comment"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "age": {
+          "type": "number",
+          "title": "Age"
+        }
+      },
+      "form": [
+        {
+          "key": "comment",
+          "type": "textarea"
+        },
+        {
+          "type": "fieldset",
+          "title": "Author",
+          "expandable": true,
+          "items": [
+            "name",
+            "age"
+          ]
+        }
+      ]
+    }
   }
 ];

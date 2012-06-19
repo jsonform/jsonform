@@ -5,6 +5,14 @@
     <style>
       @import url("../deps/opt/bootstrap.css");
       /* @import url("../deps/opt/bootstrap-wysihtml5.css"); */
+
+      .expandable > legend:before {
+        content: '\0025B8';
+        padding-right: 5px;
+      }
+      .expanded > legend:before {
+        content: '\0025BE';
+      }
     </style>
   </head>
   
@@ -46,7 +54,7 @@
     <!-- <script src="tabarray/t.js"></script> -->
     <!-- <script src="wysihtml5/t.js"></script> -->
     
-    <script src="imageselect/t.js"></script>
+    <script src="fieldset/t.js"></script>
 
     <script src="runner.js"></script>
   </body>
