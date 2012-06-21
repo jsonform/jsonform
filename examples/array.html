@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dealing with arrays</title>
+    <link rel="stylesheet" style="text/css" href="../deps/opt/bootstrap.css" />
+    <style type="text/css">
+      body {
+        width: 40em;
+        margin: 1em auto;
+      }
+      h1 {
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dealing with arrays</h1>
+    <form></form>
+    <script type="text/javascript" src="../deps/jquery.min.js"></script>
+    <script type="text/javascript" src="../deps/underscore.js"></script>
+    <script type="text/javascript" src="../deps/opt/jsv.js"></script>
+    <script type="text/javascript" src="../deps/opt/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="../deps/opt/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="../deps/opt/jquery.ui.mouse.js"></script>
+    <script type="text/javascript" src="../deps/opt/jquery.ui.sortable.js"></script>
+    <script type="text/javascript" src="../lib/jsonform.js"></script>
+    <script type="text/javascript">
+      $('form').jsonForm({
+        schema: {
+          "friends": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "title": "Friend",
+              "properties": {
+                "nick": {
+                  "type": "string",
+                  "title": "Nickname",
+                  "required": true
+                },
+                "gender": {
+                  "type": "string",
+                  "title": "Gender",
+                  "enum": [ "male", "female", "alien" ]
+                },
+                "age": {
+                  "type": "integer",
+                  "title": "Age"
+                }
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
