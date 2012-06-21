@@ -96,7 +96,8 @@ var tests = [
           title: 'An array',
           items: {
             type: 'string',
-            title: 'Array item'
+            title: 'Array item',
+            maxLength: 15
           }
         }
       },
@@ -120,6 +121,47 @@ var tests = [
           ]
         }
       ]
+    }
+  },
+  {
+    name: 'Value with quote',
+    jsonform: {
+      schema: {
+        arr: {
+          type: 'array',
+          title: 'An array',
+          items: {
+            type: 'string',
+            title: 'Array item',
+            maxLength: 15
+          }
+        }
+      },
+      form: [
+        {
+          type: 'tabarray',
+          items: [
+            {
+              type: 'fieldset',
+              title: 'Number {{idx}}',
+              legend: '{{idx}}. {{value}}',
+              items: [
+                {
+                  key: 'arr[]',
+                  title: 'Item {{idx}}',
+                  value: 'Hello number {{idx}}',
+                  valueInLegend: true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      value: {
+        arr: [
+          "'bout"
+        ]
+      }
     }
   }
 ];
