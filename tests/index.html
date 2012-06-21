@@ -4,7 +4,16 @@
     <meta charset="utf-8" />
     <style>
       @import url("../deps/opt/bootstrap.css");
+      @import url("../deps/opt/spectrum.css");
       /* @import url("../deps/opt/bootstrap-wysihtml5.css"); */
+
+      .expandable > legend:before {
+        content: '\0025B8';
+        padding-right: 5px;
+      }
+      .expanded > legend:before {
+        content: '\0025BE';
+      }
     </style>
   </head>
   
@@ -21,6 +30,7 @@
     <script src="../deps/opt/jquery.ui.sortable.js"></script>
     <script src="../deps/opt/bootstrap-dropdown.js"></script>
     <script src="../deps/opt/jsv.js"></script>
+    <script src="../deps/opt/spectrum.js"></script>
 
     <script src="../lib/jsonform.js"></script>
 
@@ -35,6 +45,7 @@
     <!-- <script src="array/t.js"></script> -->
     <!-- <script src="checkbox/t.js"></script> -->
     <!-- <script src="checkboxes/t.js"></script> -->
+    <!-- <script src="color/t.js"></script> -->
     <!-- <script src="fieldset/t.js"></script> -->
     <!-- <script src="file/t.js"></script> -->
     <!-- <script src="help/t.js"></script> -->
