@@ -163,5 +163,54 @@ var tests = [
         ]
       }
     }
+  },
+  {
+    name: 'Values with null item',
+    jsonform: {
+      schema: {
+        arr: {
+          type: 'array',
+          title: 'An array',
+          items: {
+            type: 'object',
+            properties: {
+              icon: {
+                type: 'string',
+                title: 'Icon'
+              }
+            },
+            title: 'Array item'
+          }
+        }
+      },
+      form: [
+        {
+          type: 'tabarray',
+          items: [
+            {
+              type: 'fieldset',
+              title: 'Number {{idx}}',
+              legend: '{{idx}}. {{value}}',
+              items: [
+                {
+                  key: 'arr[].icon',
+                  title: 'Item {{idx}}',
+                  value: 'Hello number {{idx}}',
+                  valueInLegend: true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      value: {
+        arr: [
+          { icon: 'blah' },
+          { icon: 'foo' },
+          null,
+          { icon: 'bar' }
+        ]
+      }
+    }
   }
 ];
