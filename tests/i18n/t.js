@@ -50,7 +50,7 @@ var tests = [
         },
         'arr'
       ],
-      data: {
+      tpldata: {
         hello: 'Hello',
         user: {
           name: 'tidoust'
@@ -127,7 +127,7 @@ var tests = [
         },
         'arr'
       ],
-      data: {
+      tpldata: {
         hello: 'Salut',
         user: {
           name: 'tidoust'
