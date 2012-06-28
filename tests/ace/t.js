@@ -13,7 +13,7 @@ var tests = [
           key: 'code',
           type: 'ace',
           aceMode: 'json',
-          width: '600px',
+          width: '100%',
           height: '100px'
         }
       ]
