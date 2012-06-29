@@ -1,4 +1,4 @@
-var idx = 4;
+var idx = 0;
 if (!tests[idx].jsonform.form) {
   tests[idx].jsonform.form = ['*'];
 }
