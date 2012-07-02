@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @import url("../deps/opt/bootstrap.css");
+      @import url("../deps/opt/spectrum.css");
+
+      input[type="submit"].btn {
+        margin-left: 0.5em;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h1>JSON Form playground</h1>
+
+    <p>The playground lets you test your own <a href="http://github.com/joshfire/jsonform">JSON Form</a> object to. If you do not know how to get started, take a look at the <a href="http://github.com/joshfire/jsonform/wiki">JSON Form documentation</a> and copy and paste code examples from the doc.</p>
+
+    <div class="row-fluid">
+      <div class="span5">
+        <h2>Enter a JSON Form object...</h2>
+        <form id="form" class="form-vertical"></form>
+      </div>
+      <div class="span7">
+        <h2>... and check the generated form</h2>
+        <div id="result">(none yet, hit "Try this out!" once ready)
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="../deps/jquery.min.js"></script>
+    <script src="../deps/underscore.js"></script>
+    <script src="../deps/opt/jsv.js"></script>
+    <script src="../deps/opt/jquery.ui.core.js"></script>
+    <script src="../deps/opt/jquery.ui.widget.js"></script>
+    <script src="../deps/opt/jquery.ui.mouse.js"></script>
+    <script src="../deps/opt/jquery.ui.sortable.js"></script>
+    <script src="../deps/opt/bootstrap-dropdown.js"></script>
+    <script src="../deps/opt/jsv.js"></script>
+    <script src="../deps/opt/spectrum.js"></script>
+    <script src="../deps/opt/ace/ace.js"></script>
+    <script src="../deps/opt/ace/mode-json.js"></script>
+
+    <script src="../lib/jsonform.js"></script>
+
+    <script src="playground.js"></script>
+  </body>
+</html>
