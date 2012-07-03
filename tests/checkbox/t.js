@@ -27,5 +27,20 @@ var tests = [
         }
       ]
     }
+  },
+  {
+    name: 'clearing bug',
+    jsonform: {
+      schema: {
+        check: {
+          type: 'boolean',
+          title: 'Title'
+        },
+        checktoo: {
+          type: 'boolean',
+          title: 'Other title'
+        }
+      }
+    }
   }
 ];

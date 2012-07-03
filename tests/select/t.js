@@ -137,5 +137,32 @@ var tests = [
         choice: 'choice-3'
       }
     }
+  },
+  {
+    name: 'Integer titleMap',
+    jsonform: {
+      schema: {
+        choice: {
+          type: 'integer',
+          title: 'Title',
+          'enum': [
+            1,
+            2,
+            3
+          ],
+          'default': 3
+        }
+      },
+      form: [
+        {
+          key: 'choice',
+          titleMap: {
+            1: 'Choice 1',
+            2: 'Choice 2',
+            3: 'Choice 3'
+          }
+        }
+      ]
+    }
   }
 ];
