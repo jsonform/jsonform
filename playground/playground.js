@@ -4,7 +4,7 @@ $('document').ready(function () {
       greatform: {
         title: 'JSON Form object to render',
         type: 'string',
-        'default': '{\n  "schema": {\n    "field": {\n      "type": "string",\n      "title": "A field"\n    }\n  },\n  "form": [\n    {\n      "key": "field"\n    }\n  ]\n}'
+        'default': '{\n  "schema": {\n    "field": {\n      "type": "string",\n      "title": "A field"\n    }\n  },\n  "form": [\n    {\n      "key": "field"\n    },\n    {\n      "type": "submit",\n      "title": "Submit"\n    }\n  ]\n}'
       }
     },
     form: [
@@ -49,7 +49,7 @@ $('document').ready(function () {
           if (console && console.log) {
             console.log('Values extracted from submitted form', values);
           }
-          alert('Form submitted. JSON Form generated the following object: ' + JSON.stringify(values, null, 2));
+          alert('Form submitted. Values object:\n' + JSON.stringify(values, null, 2));
         };
         $('#result').html('<form id="result-form" class="form-vertical"></form>');
         $('#result-form').jsonForm(formObject);
