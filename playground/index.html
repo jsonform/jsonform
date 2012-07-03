@@ -6,8 +6,12 @@
       @import url("../deps/opt/bootstrap.css");
       @import url("../deps/opt/spectrum.css");
 
+      body {
+        margin: 0.5em;
+      }
+
       input[type="submit"].btn {
-        margin-left: 0.5em;
+        margin-left: 1em;
       }
     </style>
   </head>
@@ -19,12 +23,11 @@
 
     <div class="row-fluid">
       <div class="span5">
-        <h2>Enter a JSON Form object...</h2>
         <form id="form" class="form-vertical"></form>
       </div>
       <div class="span7">
-        <h2>... and check the generated form</h2>
-        <div id="result">(none yet, hit "Try this out!" once ready)
+        <h2>3. Check the generated form</h2>
+        <div id="result">(none yet, hit "Generate the form!" once ready)
         </div>
       </div>
     </div>

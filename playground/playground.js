@@ -4,10 +4,13 @@ $('document').ready(function () {
       greatform: {
         title: 'JSON Form object to render',
         type: 'string',
-        'default': '{\n  "schema": {\n    "field": {\n      "type": "string",\n      "title": "A field"\n    }\n  },\n  "form": [\n    {\n      "key": "field"\n    }\n  ]\n}\n'
+        'default': '{\n  "schema": {\n    "field": {\n      "type": "string",\n      "title": "A field"\n    }\n  },\n  "form": [\n    {\n      "key": "field"\n    }\n  ]\n}'
       }
     },
     form: [
+      {
+        template: '<h2>1. Write some JSON Form object</h2>'
+      },
       {
         key: 'greatform',
         type: 'ace',
@@ -17,8 +20,12 @@ $('document').ready(function () {
         notitle: true
       },
       {
+        template: '<h2>2. Hit the "generate" button</h2>'
+      },
+      {
         type: 'submit',
-        value: 'Try this out!'
+        value: 'Generate the form!',
+        htmlClass: 'btn-large'
       }
     ],
     onSubmitValid: function (values) {
