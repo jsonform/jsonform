@@ -36,7 +36,9 @@ $('document').ready(function () {
 
       // Parse entered content as JSON
       try {
-        formObject = JSON.parse(values.greatform);
+        // Most examples should be written in pure JSON,
+        // but playground is helpful to check behaviors too!
+        eval('formObject=' + values.greatform);
       }
       catch (e) {
         $('#result').html('<pre>Hmmm, sorry, the entered content does not seem to be valid JSON.\nJSON parser returned: ' + e + '</pre>');
@@ -50,6 +52,9 @@ $('document').ready(function () {
             console.log('Values extracted from submitted form', values);
           }
           alert('Form submitted. Values object:\n' + JSON.stringify(values, null, 2));
+        };
+        formObject.onSubmit = function (errors, values) {
+          if (errors) console.log('Validation errors', errors);
         };
         $('#result').html('<form id="result-form" class="form-vertical"></form>');
         $('#result-form').jsonForm(formObject);
