@@ -1,0 +1,17 @@
+{
+  "schema": {
+    "field": {
+      "type": "string",
+      "title": "A field"
+    }
+  },
+  "form": [
+    {
+      "key": "field"
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
+    }
+  ]
+}

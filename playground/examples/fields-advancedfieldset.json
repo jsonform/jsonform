@@ -1,0 +1,21 @@
+{
+  "schema": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "age": {
+      "type": "number",
+      "title": "Age"
+    }
+  },
+  "form": [
+    "name",
+    {
+      "type": "advancedfieldset",
+      "items": [
+        "age"
+      ]
+    }
+  ]
+}

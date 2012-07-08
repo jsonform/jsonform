@@ -1,0 +1,28 @@
+{
+  "schema": {
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "author": {
+      "type": "object",
+      "title": "Author",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "gender": {
+          "type": "string",
+          "title": "Gender",
+          "enum": [ "male", "female", "alien" ]
+        },
+        "magic": {
+          "type": "integer",
+          "title": "Magic number",
+          "default": 42
+        }
+      }
+    }
+  }
+}

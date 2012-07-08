@@ -1,0 +1,28 @@
+{
+  "schema": {
+    "firstname": {
+      "type": "string",
+      "title": "First name"
+    },
+    "lastname": {
+      "type": "string",
+      "title": "Last name"
+    },
+    "fullname": {
+      "type": "string",
+      "title": "Full name"
+    }
+  },
+  "form": [
+    "firstname",
+    "lastname",
+    {
+      "key": "fullname",
+      "value": "{{values.firstname}} {{values.lastname}}"
+    }
+  ],
+  "value": {
+    "firstname": "François",
+    "lastname": "Daoust"
+  }
+}

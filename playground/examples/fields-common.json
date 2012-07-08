@@ -1,0 +1,19 @@
+{
+  "schema": {
+    "mood": {
+      "type": "string",
+      "title": "Mood of the day",
+      "description": "Describe how you feel with a short adjective",
+      "default": "happy"
+    }
+  },
+  "form": [
+    {
+      "key": "mood",
+      "prepend": "I feel",
+      "append": "today",
+      "notitle": true,
+      "htmlClass": "usermood"
+    }
+  ]
+}

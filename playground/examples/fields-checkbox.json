@@ -1,0 +1,14 @@
+{
+  "schema": {
+    "flag": {
+      "type": "boolean",
+      "title": "Adult"
+    }
+  },
+  "form": [
+    {
+      "key": "flag",
+      "inlinetitle": "Check this box if you are over 18"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema": {
+    "friends": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Friend",
+        "properties": {
+          "nick": {
+            "type": "string",
+            "title": "Nickname",
+            "required": true
+          },
+          "gender": {
+            "type": "string",
+            "title": "Gender",
+            "enum": [ "male", "female", "alien" ]
+          },
+          "age": {
+            "type": "integer",
+            "title": "Age"
+          }
+        }
+      }
+    }
+  },
+  "value": {
+    "friends": [
+      { "nick": "tidoust", "gender": "male", "age": 34 },
+      { "nick": "titine", "gender": "female", "age": 6 },
+      { "nick": "E.T.", "gender": "alien" }
+    ]
+  }
+}

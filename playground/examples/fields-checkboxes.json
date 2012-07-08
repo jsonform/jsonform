@@ -1,0 +1,30 @@
+{
+  "schema": {
+    "menu": {
+      "type": "array",
+      "title": "Options",
+      "items": {
+        "type": "string",
+        "title": "Option",
+        "enum": [
+          "starter",
+          "maincourse",
+          "cheese",
+          "dessert"
+        ]
+      }
+    }
+  },
+  "form": [
+    {
+      "key": "menu",
+      "type": "checkboxes",
+      "titleMap": {
+        "starter": "Starter would be great",
+        "maincourse": "No way I'll skip the main course",
+        "cheese": "Cheddar rules!",
+        "dessert": "Thumbs up for a dessert"
+      }
+    }
+  ]
+}

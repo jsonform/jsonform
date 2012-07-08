@@ -1,0 +1,31 @@
+{
+  "schema": {
+    "thoughts": {
+      "type": "array",
+      "title": "Thoughts",
+      "items": {
+        "type": "string",
+        "title": "A thought",
+        "default": "Grmpf"
+      }
+    }
+  },
+  "form": [
+    {
+      "type": "tabarray",
+      "items": [
+        {
+          "type": "section",
+          "legend": "{{idx}}. {{value}}",
+          "items": [
+            {
+              "key": "thoughts[]",
+              "title": "Thought {{idx}}",
+              "valueInLegend": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

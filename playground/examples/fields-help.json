@@ -1,0 +1,30 @@
+{
+  "schema": {
+    "name": {
+      "title": "Name",
+      "description": "Nickname allowed",
+      "type": "string"
+    },
+    "gender": {
+      "title": "Gender",
+      "description": "Your gender",
+      "type": "string",
+      "enum": [
+        "male",
+        "female",
+        "alien"
+      ]
+    }
+  },
+  "form": [
+    "*",
+    {
+      "type": "help",
+      "helpvalue": "<strong>Click on <em>Submit</em></strong> when you're done"
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
+    }
+  ]
+}

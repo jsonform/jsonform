@@ -1,0 +1,29 @@
+{
+  "schema": {
+    "thoughts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "Thought",
+        "default": "wtf"
+      }
+    }
+  },
+  "form": [
+    {
+      "type": "tabarray",
+      "items": [
+        {
+          "type": "section",
+          "legend": "{{idx}}. {{value}}",
+          "items": [
+            {
+              "key": "thoughts[]",
+              "valueInLegend": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
