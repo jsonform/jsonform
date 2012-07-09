@@ -24,15 +24,18 @@
   "form": [
     {
       "type": "tabarray",
-      "items": [
-        "friends[].nick",
-        {
-          "type": "array",
-          "items": [
-            "friends[].animals[]"
-          ]
-        }
-      ]
+      "items": {
+        "type": "section",
+        "items": [
+          "friends[].nick",
+          {
+            "type": "array",
+            "items": [
+              "friends[].animals[]"
+            ]
+          }
+        ]
+      }
     }
   ]
 }
