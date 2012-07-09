@@ -73,6 +73,11 @@ Documentation
 You can do much more with the JSON Form library. You may define a more complex data model that includes arrays and objects for instance, or you may control the layout of the form to include fieldsets, expandable sections or tabs. For more information, check the [reference documentation for JSON Form](http://developer.joshfire.com/doc/dev/ref/jsonform) on Joshfire's Developer Web site.
 
 
+Playground
+----------
+If you're more of the acting type than of the reading type, the [JSON Form Playground](https://github.com/joshfire/jsonform/tree/master/playground#readme) is a simple JSON Form editor that lets you try out and extend all the examples in the doc.
+
+
 Dependencies
 ------------
 
