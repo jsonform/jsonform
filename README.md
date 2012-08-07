@@ -70,7 +70,7 @@ NB: Paths in this example are relative to the root of the JSON Form project.
 Documentation
 -------------
 
-You can do much more with the JSON Form library. You may define a more complex data model that includes arrays and objects for instance, or you may control the layout of the form to include fieldsets, expandable sections or tabs. For more information, check the [reference documentation for JSON Form](http://developer.joshfire.com/doc/dev/ref/jsonform) on Joshfire's Developer Web site.
+You can do much more with the JSON Form library. You may define a more complex data model that includes arrays and objects for instance, or you may control the layout of the form to include fieldsets, expandable sections or tabs. For more information, check the [reference documentation for JSON Form](http://github.com/joshfire/jsonform/wiki).
 
 
 Playground
