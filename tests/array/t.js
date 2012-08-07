@@ -126,5 +126,41 @@ var tests = [
         }
       }
     }
+  },
+  {
+    name: 'Value as legend',
+    jsonform: {
+      schema: {
+        arr: {
+          type: 'array',
+          title: 'An array',
+          items: {
+            type: 'string',
+            title: 'Array item',
+            maxLength: 15
+          }
+        }
+      },
+      form: [
+        {
+          type: 'array',
+          items: [
+            {
+              type: 'fieldset',
+              title: 'Number {{idx}}',
+              legend: '{{idx}}. {{value}}',
+              items: [
+                {
+                  key: 'arr[]',
+                  title: 'Item {{idx}}',
+                  value: 'Hello number {{idx}}',
+                  valueInLegend: true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 ];
