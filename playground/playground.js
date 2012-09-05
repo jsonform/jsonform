@@ -26,6 +26,7 @@ $('document').ready(function () {
           'fields-actions',
           'fields-array',
           'fields-tabarray',
+          'fields-tabarray-maxlength',
           'fields-selectfieldset',
           'fields-submit',
           'fields-help',
@@ -72,6 +73,7 @@ $('document').ready(function () {
           'fields-actions': 'Fields - Group of buttons: the actions type',
           'fields-array': 'Fields - Generic array: the array type',
           'fields-tabarray': 'Fields - Arrays with tabs: the tabarray type',
+          'fields-tabarray-maxlength': 'Fields - Arrays with tabs: the tabarray type w/ maxLength',
           'fields-selectfieldset': 'Fields - Alternative: the selectfieldset type',
           'fields-submit': 'Fields - Submit the form: the submit type',
           'fields-help': 'Fields - Guide users: the help type',
@@ -85,7 +87,9 @@ $('document').ready(function () {
         },
         onChange: function (evt) {
           var selected = $(evt.target).val();
+
           loadExample(selected);
+          if (history) history.pushState({"example":selected}, "Example - "+selected,"?example="+selected);
         }
       },
       {

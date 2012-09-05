@@ -12,7 +12,7 @@ python -m SimpleHTTPServer
 Then open this page in your favorite browser:
 [`http://localhost:8000/playground/`](http://localhost:8000/playground/)
 
-1. Using `http-server` node module from the root of the JSON Form project:
+2. Using `http-server` node module from the root of the JSON Form project:
 ```bash
 npm install -g http-server
 http-server
