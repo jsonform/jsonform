@@ -36,7 +36,8 @@ $('document').ready(function () {
           'templating-values',
           'templating-tpldata',
           'events',
-          'previousvalues'
+          'previousvalues',
+          'factory-sleek'
         ],
         'default': 'gettingstarted'
       },
@@ -83,7 +84,8 @@ $('document').ready(function () {
           'templating-values': 'Templating - values.xxx to reference another field',
           'templating-tpldata': 'Templating - Using the tpldata property',
           'events': 'Using event handlers',
-          'previousvalues': 'Using previously submitted values'
+          'previousvalues': 'Using previously submitted values',
+          'factory-sleek': 'Joshfire Factory - Sleek template'
         },
         onChange: function (evt) {
           var selected = $(evt.target).val();
