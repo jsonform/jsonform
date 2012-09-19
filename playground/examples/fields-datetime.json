@@ -1,0 +1,14 @@
+{
+  "schema": {
+    "datetime1": {
+      "type": "number",
+      "title": "Date-time in UTC milliseconds",
+      "format": "utc-millisec"
+    },
+    "datetime2": {
+      "type": "number",
+      "title": "Date-time in UTC seconds",
+      "format": "utc-sec"
+    }
+  }
+}
