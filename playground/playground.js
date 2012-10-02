@@ -29,6 +29,7 @@ $('document').ready(function () {
           'fields-tabarray',
           'fields-tabarray-maxlength',
           'fields-selectfieldset',
+          'fields-selectfieldset-pills',
           'fields-submit',
           'fields-help',
           'fields-hidden',
@@ -78,6 +79,7 @@ $('document').ready(function () {
           'fields-tabarray': 'Fields - Arrays with tabs: the tabarray type',
           'fields-tabarray-maxlength': 'Fields - Arrays with tabs: the tabarray type w/ maxLength',
           'fields-selectfieldset': 'Fields - Alternative: the selectfieldset type',
+          'fields-selectfieldset-pills': 'Fields - Alternative with pills',
           'fields-submit': 'Fields - Submit the form: the submit type',
           'fields-help': 'Fields - Guide users: the help type',
           'fields-hidden': 'Fields - Hidden form values: the hidden type',
@@ -179,7 +181,11 @@ $('document').ready(function () {
         alert('Form submitted. Values object:\n' + JSON.stringify(values, null, 2));
       };
       createdForm.onSubmit = function (errors, values) {
-        if (errors) console.log('Validation errors', errors);
+        if (errors) {
+          console.log('Validation errors', errors);
+          return false;
+        }
+        return true;
       };
       $('#result').html('<form id="result-form" class="form-vertical"></form>');
       $('#result-form').jsonForm(createdForm);
