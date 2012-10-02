@@ -1,0 +1,16 @@
+{
+  "schema": {
+    "language": {
+      "type": "string",
+      "title": "Best language",
+      "enum": [ "JavaScript", "Python", "PHP", "Java", "C++", "other" ]
+    }
+  },
+  "form": [
+    {
+      "key": "language",
+      "type": "radiobuttons",
+      "activeClass": "btn-success"
+    }
+  ]
+}
