@@ -31,6 +31,10 @@
           "legend": "Search by category"
         }
       ]
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
     }
   ]
 }

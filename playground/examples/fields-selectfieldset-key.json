@@ -1,5 +1,9 @@
 {
   "schema": {
+    "choice": {
+      "type": "string",
+      "enum": [ "text", "cat" ]
+    },
     "text": {
       "type": "string",
       "title": "Text"
@@ -20,18 +24,20 @@
   "form": [
     {
       "type": "selectfieldset",
+      "key": "choice",
       "title": "Make a choice",
-      "tabsType": "pills",
+      "titleMap": {
+        "text": "Search by text",
+        "cat": "Search by category"
+      },
       "items": [
-        {
-          "key": "text",
-          "legend": "Search by text"
-        },
-        {
-          "key": "category",
-          "legend": "Search by category"
-        }
+        "text",
+        "category"
       ]
+    },
+    {
+      "type": "submit",
+      "value": "Submit"
     }
   ]
 }
