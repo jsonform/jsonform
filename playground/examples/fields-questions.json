@@ -19,13 +19,13 @@
           "options": [
             {
               "title": "Yes",
-              "setvalue": "happy",
+              "value": "happy",
               "next": "q2",
               "htmlClass": "btn-primary"
             },
             {
               "title": "No",
-              "setvalue": "sad",
+              "value": "sad",
               "submit": true
             }
           ]
@@ -37,12 +37,12 @@
           "options": [
             {
               "title": "Yes",
-              "setvalue": "reallyhappy",
+              "value": "reallyhappy",
               "submit": true
             },
             {
               "title": "No",
-              "setvalue": "happy",
+              "value": "happy",
               "submit": true
             }
           ]
