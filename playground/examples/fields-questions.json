@@ -1,0 +1,53 @@
+{
+  "schema": {
+    "response": {
+      "type": "string",
+      "title": "Search"
+    }
+  },
+  "form": [
+    {
+      "type": "questions",
+      "key": "response",
+      "title": "Let's check your mood",
+      "items": [
+        {
+          "type": "question",
+          "title": "Are you happy?",
+          "activeClass": "btn-success",
+          "optionsType": "radiobuttons",
+          "options": [
+            {
+              "title": "Yes",
+              "setvalue": "happy",
+              "next": "q2",
+              "htmlClass": "btn-primary"
+            },
+            {
+              "title": "No",
+              "setvalue": "sad",
+              "submit": true
+            }
+          ]
+        },
+        {
+          "type": "question",
+          "qid": "q2",
+          "title": "Really happy?",
+          "options": [
+            {
+              "title": "Yes",
+              "setvalue": "reallyhappy",
+              "submit": true
+            },
+            {
+              "title": "No",
+              "setvalue": "happy",
+              "submit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
