@@ -2,7 +2,7 @@
   "schema": {
     "friends": {
       "type": "array",
-      "maxLength":3,
+      "maxItems": 3,
       "items": {
         "type": "object",
         "title": "Friend",
@@ -13,6 +13,7 @@
           },
           "animals": {
             "type": "array",
+            "maxItems": 2,
             "items": {
               "type": "string",
               "title": "Animal name"
