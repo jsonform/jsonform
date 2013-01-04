@@ -134,5 +134,22 @@ var tests = [
         }
       ]
     }
+  },
+  {
+    name: 'form-placeholder',
+    jsonform: {
+      schema: {
+        textfield: {
+          title: 'Title',
+          type: 'string'
+        }
+      },
+      form: [
+        {
+          key: 'textfield',
+          placeholder: 'place holder'
+        }
+      ]
+    }
   }
 ];
