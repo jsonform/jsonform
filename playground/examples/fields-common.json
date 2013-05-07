@@ -10,8 +10,7 @@
     "longmood": {
       "type": "string",
       "title": "Mood of the day",
-      "description": "Describe how you feel with a rather long adjective-like series of words",
-      "default": "incredibly and admirably great"
+      "description": "Describe how you feel with a rather long adjective-like series of words"
     }
   },
   "form": [
@@ -22,7 +21,8 @@
       "append": "today",
       "notitle": true,
       "htmlClass": "usermood",
-      "fieldHtmlClass": "input-xxlarge"
+      "fieldHtmlClass": "input-xxlarge",
+      "placeholder": "incredibly and admirably great"
     }
   ]
 }
