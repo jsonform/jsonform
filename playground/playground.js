@@ -1,3 +1,4 @@
+/*global $, ace, console*/
 $('document').ready(function () {
   var formObject = {
     schema: {
@@ -99,7 +100,10 @@ $('document').ready(function () {
           var selected = $(evt.target).val();
 
           loadExample(selected);
-          if (history) history.pushState({"example":selected}, "Example - "+selected,"?example="+selected);
+          if (history) history.pushState(
+            { example: selected},
+            'Example - ' + selected,
+            '?example=' + selected);
         }
       },
       {
@@ -122,7 +126,7 @@ $('document').ready(function () {
    */
   var getRequestedExample = function () {
     var query = window.location.search.substring(1);
-    var vars = query.split("&");
+    var vars = query.split('&');
     var param = null;
     for (var i = 0; i < vars.length; i++) {
       param = vars[i].split('=');
@@ -157,7 +161,7 @@ $('document').ready(function () {
    */
   var generateForm = function () {
     var values = $('#form').jsonFormValue();
-    
+
     // Reset result pane
     $('#result').html('');
 
@@ -182,7 +186,8 @@ $('document').ready(function () {
         if (console && console.log) {
           console.log('Values extracted from submitted form', values);
         }
-        alert('Form submitted. Values object:\n' + JSON.stringify(values, null, 2));
+        window.alert('Form submitted. Values object:\n' +
+          JSON.stringify(values, null, 2));
       };
       createdForm.onSubmit = function (errors, values) {
         if (errors) {
