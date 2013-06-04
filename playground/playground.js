@@ -148,7 +148,7 @@ $('document').ready(function () {
       var aceId = $('#form .ace_editor').attr('id');
       var editor = ace.edit(aceId);
       editor.getSession().setValue(code);
-    }).fail(function (code) {
+    }).fail(function () {
       $('#result').html('Sorry, I could not retrieve the example!');
     });
   };
