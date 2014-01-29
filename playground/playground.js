@@ -133,6 +133,8 @@ $('document').ready(function () {
     for (var i = 0; i < vars.length; i++) {
       param = vars[i].split('=');
       if (param[0] === 'example') {
+        if (param[1].charAt(param[1].length - 1) == '/') 
+          return param[1].replace('/', '');
         return param[1];
       }
     }
