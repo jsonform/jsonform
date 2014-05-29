@@ -43,6 +43,7 @@ $('document').ready(function () {
           'templating-tpldata',
           'events',
           'previousvalues',
+          'previousvalues-multi-array',
           'factory-sleek'
         ],
         'default': 'gettingstarted'
@@ -96,6 +97,7 @@ $('document').ready(function () {
           'templating-tpldata': 'Templating - Using the tpldata property',
           'events': 'Using event handlers',
           'previousvalues': 'Using previously submitted values',
+          'previousvalues-multi-array': 'Using previously submitted values - Multidimensional Arrays',
           'factory-sleek': 'Joshfire Factory - Sleek template'
         },
         onChange: function (evt) {

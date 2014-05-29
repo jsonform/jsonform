@@ -1,0 +1,22 @@
+{
+  "schema": {
+    "reminders": {
+      "type": "array",
+      "title": "Reminders",
+      "items": {
+        "type": "array",
+        "title": "Task List",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "value": {
+    "reminders": [
+      ["Buy clothes", "Pick up kids"],
+      ["Call John", "Send email"],
+      ["Wash car"]
+    ]
+  }
+}
