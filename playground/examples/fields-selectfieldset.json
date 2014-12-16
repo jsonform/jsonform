@@ -1,0 +1,40 @@
+{
+  "schema": {
+    "text": {
+      "type": "string",
+      "title": "Text"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "enum": [
+        "Geography",
+        "Entertainment",
+        "History",
+        "Arts",
+        "Science",
+        "Sports"
+      ]
+    }
+  },
+  "form": [
+    {
+      "type": "selectfieldset",
+      "title": "Make a choice",
+      "items": [
+        {
+          "key": "text",
+          "legend": "Search by text"
+        },
+        {
+          "key": "category",
+          "legend": "Search by category"
+        }
+      ]
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
+    }
+  ]
+}

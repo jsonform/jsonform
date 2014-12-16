@@ -1,0 +1,33 @@
+{
+  "schema": {
+    "icon": {
+      "title": "Choose an icon",
+      "type": "string",
+      "enum": [
+        "address-book",
+        "archive",
+        "balloon",
+        "calendar",
+        "camera",
+        "cd",
+        "disk",
+        "heart",
+        "home",
+        "mail"
+      ]
+    }
+  },
+  "form": [
+    {
+      "key": "icon",
+      "type": "imageselect",
+      "imageWidth": 64,
+      "imageHeight": 64,
+      "imageButtonClass": "btn-inverse",
+      "imagePrefix": "http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/64/blue-",
+      "imageSuffix": "-icon.png",
+      "imageSelectorColumns": 4,
+      "imageSelectorTitle": "Random choice"
+    }
+  ]
+}

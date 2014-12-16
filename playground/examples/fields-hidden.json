@@ -1,0 +1,24 @@
+{
+  "schema": {
+    "apikey": {
+      "type": "string",
+      "title": "API key",
+      "default": "supercalifragilisticexpialidocious"
+    },
+    "text": {
+      "type": "string",
+      "title": "Search string"
+    }
+  },
+  "form": [
+    {
+      "key": "apikey",
+      "type": "hidden"
+    },
+    "text",
+    {
+      "type": "submit",
+      "title": "Search"
+    }
+  ]
+}

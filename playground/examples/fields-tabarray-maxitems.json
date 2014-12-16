@@ -1,0 +1,43 @@
+{
+  "schema": {
+    "friends": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "title": "Friend",
+        "properties": {
+          "nick": {
+            "type": "string",
+            "title": "Nickname"
+          },
+          "animals": {
+            "type": "array",
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "title": "Animal name"
+            }
+          }
+        }
+      }
+    }
+  },
+  "form": [
+    {
+      "type": "tabarray",
+      "items": {
+        "type": "section",
+        "items": [
+          "friends[].nick",
+          {
+            "type": "array",
+            "items": [
+              "friends[].animals[]"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

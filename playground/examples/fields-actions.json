@@ -1,0 +1,24 @@
+{
+  "schema": {
+    "search": {
+      "type": "string",
+      "title": "Search"
+    }
+  },
+  "form": [
+    "search",
+    {
+      "type": "actions",
+      "items": [
+        {
+          "type": "submit",
+          "title": "Submit"
+        },
+        {
+          "type": "button",
+          "title": "Cancel"
+        }
+      ]
+    }
+  ]
+}

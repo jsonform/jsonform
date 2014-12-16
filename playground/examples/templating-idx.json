@@ -1,0 +1,20 @@
+{
+  "schema": {
+    "thoughts": {
+      "type": "array",
+      "items": {
+        "title": "A thought",
+        "type": "string"
+      }
+    }
+  },
+  "form": [
+    {
+      "type": "array",
+      "items": [{
+        "key": "thoughts[]",
+        "title": "Thought number {{idx}}"
+      }]
+    }
+  ]
+}

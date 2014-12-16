@@ -1,0 +1,28 @@
+{
+  "schema": {
+    "shortmood": {
+      "type": "string",
+      "title": "Mood of the day",
+      "description": "Describe how you feel in short",
+      "default": "happy",
+      "required": true
+    },
+    "longmood": {
+      "type": "string",
+      "title": "Mood of the day",
+      "description": "Describe how you feel with a rather long adjective-like series of words"
+    }
+  },
+  "form": [
+    "shortmood",
+    {
+      "key": "longmood",
+      "prepend": "I feel",
+      "append": "today",
+      "notitle": true,
+      "htmlClass": "usermood",
+      "fieldHtmlClass": "input-xxlarge",
+      "placeholder": "incredibly and admirably great"
+    }
+  ]
+}

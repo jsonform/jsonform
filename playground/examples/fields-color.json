@@ -1,0 +1,9 @@
+{
+  "schema": {
+    "maincolor": {
+      "type": "string",
+      "title": "Main color",
+      "format": "color"
+    }
+  }
+}
