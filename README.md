@@ -83,7 +83,7 @@ Dependencies
 
 At a minimum, the JSON Form library depends on:
 - [jQuery](http://jquery.com/)
-- The [Underscore.js](http://documentcloud.github.com/underscore/) utility belt
+- The [Underscore.js](http://underscorejs.org/) utility belt
 
 The JSON Form library may require further libraries, depending on the features you need for the forms you need to render. In particular:
 - [ACE](http://ace.ajax.org/) is needed to render rich text input fields. The [deps/opt/ace](https://github.com/joshfire/jsonform/tree/master/deps/opt/ace) folder contains a minimal set of files from ACE to render a JSON input field. Beware that the code of `ace.js` needs to be encapsulated in `(function(require,define,requirejs) {...})(undefined,undefined,undefined);` before it may be used within JSON Form.
