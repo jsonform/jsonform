@@ -93,9 +93,9 @@ The JSON Form library may require further libraries, depending on the features y
 - [wysihtml5](http://jhollingworth.github.com/bootstrap-wysihtml5/) is required if the form uses ```wysihtml5``` textarea fields.
 - [Spectrum](http://bgrins.github.com/spectrum/) is required if the form uses `color` fields.
 
-All of these libraries are in the [deps](https://github.com/joshfire/jsonform/tree/master/deps) folder, although you might want to check their respective Web site for more recent versions.
+All of these libraries are in the [deps](https://github.com/joshfire/jsonform/tree/master/deps) folder for now, although you might want to check their respective Web site for more recent versions.
 
-NB: JSON Form also uses ```JSON.parse``` and ```JSON.stringify``` which is normally already natively supported by all modern browsers. You may use a JSON library otherwise.
+NB: JSON Form also uses ```JSON.parse``` and ```JSON.stringify``` which is normally already natively supported by all modern browsers.
 
 
 License
