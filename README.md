@@ -75,8 +75,7 @@ You can do much more with the JSON Form library. You may define a more complex d
 
 Playground
 ----------
-If you're more of the acting type than of the reading type, the [JSON Form Playground](https://github.com/joshfire/jsonform/tree/master/playground#readme) is a simple JSON Form editor that lets you try out and extend all the examples in the doc.
-
+If you're more of the acting type than of the reading type, the [JSON Form Playground](https://jsonform.github.io/jsonform/playground/index.html) is a simple JSON Form editor that lets you try out and extend all the examples in the doc.
 
 Dependencies
 ------------
