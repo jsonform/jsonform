@@ -1,9 +1,8 @@
 {
-  "name" : "json-form",
+  "name" : "jsonform",
   "version" : "1.0.0",
   "main" : "./lib/jsonform.js",
-  "user" : "Joshfire",
-  "domain": "joshfire.com",
+  "user" : "jsonform",
   "description": "Client-side JavaScript library that generates HTML forms from structured data models expressed using a JSON schema, possibly completed by a form layout description.",
   "keywords": [
     "JSON",
@@ -16,6 +15,11 @@
       "name": "Joshfire",
       "email": "contact@joshfire.com",
       "web": "http://www.joshfire.com" 
+    },
+    {
+      "name": "tchapi",
+      "email": "regbasket+github@gmail.com",
+      "web": "https://github.com/tchapi"
     } 
   ],
   "licenses": [
