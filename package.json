@@ -1,8 +1,9 @@
 {
   "name" : "jsonform",
-  "version" : "1.0.0",
+  "version" : "2.1.0",
   "main" : "./lib/jsonform.js",
   "user" : "jsonform",
+  "repository": "https://github.com/jsonform/jsonform",
   "description": "Client-side JavaScript library that generates HTML forms from structured data models expressed using a JSON schema, possibly completed by a form layout description.",
   "keywords": [
     "JSON",
