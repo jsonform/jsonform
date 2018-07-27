@@ -1,6 +1,6 @@
 {
   "name" : "jsonform",
-  "version" : "2.1.0",
+  "version" : "2.1.1",
   "main" : "./lib/jsonform.js",
   "user" : "jsonform",
   "repository": "https://github.com/jsonform/jsonform",
@@ -23,10 +23,5 @@
       "web": "https://github.com/tchapi"
     } 
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "LICENSE"
-    }
-  ]
+  "license": "MIT"
 }

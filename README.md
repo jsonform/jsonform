@@ -5,7 +5,7 @@ JSON Form
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true)
 ![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen.svg?longCache=true)
 ![Release](https://img.shields.io/github/release/jsonform/jsonform.svg)
-![NPM: pending](https://img.shields.io/badge/npm-pending-yellow.svg?longCache=true)
+![NPM: released](https://img.shields.io/npm/v/jsonform.svg)
 
 The JSON Form library is a JavaScript client-side library that takes a
 structured data model defined using [JSON Schema](http://json-schema.org/) as
