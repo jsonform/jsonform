@@ -21,6 +21,10 @@
       "append": "today",
       "notitle": true,
       "htmlClass": "usermood",
+      "htmlMetaData":{
+        "style":"border: 1px solid blue",
+        "data-title":"Mood"
+      },
       "fieldHtmlClass": "input-xxlarge",
       "placeholder": "incredibly and admirably great"
     }
