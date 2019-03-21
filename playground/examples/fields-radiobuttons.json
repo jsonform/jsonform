@@ -11,6 +11,10 @@
       "key": "language",
       "type": "radiobuttons",
       "activeClass": "btn-success"
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
     }
   ]
 }
