@@ -1,6 +1,6 @@
 {
   "name": "jsonform",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "main": "./lib/jsonform.js",
   "user": "jsonform",
   "repository": "https://github.com/jsonform/jsonform",
