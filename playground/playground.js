@@ -44,7 +44,8 @@ $('document').ready(function () {
           'templating-tpldata',
           'events',
           'previousvalues',
-          'factory-sleek'
+          'factory-sleek',
+          'navigation-tabs'
         ],
         'default': 'gettingstarted'
       },
@@ -98,7 +99,8 @@ $('document').ready(function () {
           'templating-tpldata': 'Templating - Using the tpldata property',
           'events': 'Using event handlers',
           'previousvalues': 'Using previously submitted values',
-          'factory-sleek': 'Joshfire Factory - Sleek template'
+          'factory-sleek': 'Joshfire Factory - Sleek template',
+          'navigation-tabs': 'Display - Navigation tabs'
         },
         onChange: function (evt) {
           var selected = $(evt.target).val();
