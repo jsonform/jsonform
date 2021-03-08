@@ -1,0 +1,20 @@
+{
+  "schema": {
+    "text": {
+      "type": "string",
+      "title": "Some formatted text"
+    }
+  },
+  "form": [
+    {
+      "key": "text",
+      "type": "wysihtml5",
+      "width": "100%",
+      "height": "200px"
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
+    }
+  ]
+}
