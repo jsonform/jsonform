@@ -14,7 +14,8 @@
     {
       "key": "range",
       "type": "range",
-      "step": 20
+      "step": 20,
+      "indicator": true
     }
   ]
 }
