@@ -39,6 +39,7 @@ $('document').ready(function () {
           'fields-help',
           'fields-hidden',
           'fields-questions',
+          'fields-file',
           'templating-idx',
           'templating-value',
           'templating-values',
@@ -94,6 +95,7 @@ $('document').ready(function () {
           'fields-help': 'Fields - Guide users: the help type',
           'fields-hidden': 'Fields - Hidden form values: the hidden type',
           'fields-questions': 'Fields - Series of questions: the questions type',
+          'fields-file': 'Fields - Upload file: the file type',
           'templating-idx': 'Templating - item index with idx',
           'templating-value': 'Templating - tab legend with value and valueInLegend',
           'templating-values': 'Templating - values.xxx to reference another field',
@@ -137,7 +139,7 @@ $('document').ready(function () {
     for (var i = 0; i < vars.length; i++) {
       param = vars[i].split('=');
       if (param[0] === 'example') {
-        if (param[1].charAt(param[1].length - 1) == '/') 
+        if (param[1].charAt(param[1].length - 1) == '/')
           return param[1].replace('/', '');
         return param[1];
       }

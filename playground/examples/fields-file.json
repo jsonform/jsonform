@@ -1,0 +1,38 @@
+{
+  "schema": {
+    "file_content":{
+      "title":"File content",
+      "type":"string"
+    },
+    "upload":{
+      "type":"string"
+    }
+  },
+  "form": [
+    {
+      "key":"file_content",
+      "type":"textarea"
+    },
+    {
+      "key":"upload",
+      "type":"file",
+      "accept":".txt,.md",
+      "notitle":true,
+      "onChange": function (evt, node) {
+        if (evt.target.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(event) {
+            document.getElementsByName('file_content')[0].value = event.target.result;
+          };
+          reader.readAsText(evt.target.files[0]);
+        } else {
+          document.getElementsByName('file_content')[0].value = '';
+        }
+      }
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
+    }
+  ]
+}
