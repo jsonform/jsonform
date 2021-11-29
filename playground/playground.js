@@ -91,6 +91,7 @@ $('document').ready(function () {
           'fields-tabarray-value': 'Fields - Arrays with tabs: the tabarray type w/ default & legend',
           'fields-selectfieldset': 'Fields - Alternative: the selectfieldset type',
           'fields-selectfieldset-key': 'Fields - Alternative with schema key',
+          'fields-selectfieldset-tpldata': 'Fields - Alternative with tpldata for initialization',
           'fields-submit': 'Fields - Submit the form: the submit type',
           'fields-help': 'Fields - Guide users: the help type',
           'fields-hidden': 'Fields - Hidden form values: the hidden type',

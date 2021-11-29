@@ -1,0 +1,111 @@
+{
+    "schema": {
+        "devices": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "screen": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "title": "Name"
+                            }
+                        }
+                    },
+                    "keyboard": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "title": "Name"
+                            }
+                        }
+                    },
+                    "cpu": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "title": "Name"
+                            }
+                        }
+                    },
+                    "devtype": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "form": [
+        {
+            "key": "devices",
+            "title": "Devices",
+            "type": "array",
+            "items": {
+                "type": "selectfieldset",
+                "title": "Choose your device",
+                "value": "{{devid[idx-1]}}",
+                "items": [
+                    {
+                        "key": "devices[].screen",
+                        "legend": "Screen",
+                        "value": "screen"
+                    },
+                    {
+                        "key": "devices[].cpu",
+                        "legend": "CPU",
+                        "value": "cpu"
+                    },
+                    {
+                        "key": "devices[].keyboard",
+                        "legend": "Keyboard",
+                        "value": "keyboard"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "submit",
+            "value": "Submit"
+        }
+    ],
+    "value": {
+        "devices": [
+            {
+                "devtype": "1",
+                "screen": {
+                    "name": "myscreen1"
+                }
+            },
+            {
+                "devtype": "a random param",
+                "screen": {
+                    "name": "myscreen2"
+                }
+            },
+            {
+                "devtype": "1",
+                "keyboard": {
+                    "name": "mykeyboard1"
+                }
+            },
+            {
+                "devtype": "1",
+                "cpu": {
+                    "name": "mycpu1"
+                }
+            }
+        ]
+    },
+    "tpldata": {
+        "devid": [
+            "screen",
+            "screen",
+            "keyboard",
+            "cpu"
+        ]
+    }
+}
