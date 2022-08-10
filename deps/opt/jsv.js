@@ -2434,7 +2434,7 @@ var exports = exports || this,
 						minimum = schema.getAttribute("minimum");
 						minimumCanEqual = schema.getAttribute("minimumCanEqual");
 						if (typeof minimum === "number" && (instance.getValue() < minimum || (minimumCanEqual === false && instance.getValue() === minimum))) {
-							report.addError(instance, schema, "minimum", "Number is less then the required minimum value", minimum);
+							report.addError(instance, schema, "minimum", "Number is less than the required minimum value", minimum);
 						}
 					}
 				}
@@ -2456,7 +2456,7 @@ var exports = exports || this,
 						maximum = schema.getAttribute("maximum");
 						maximumCanEqual = schema.getAttribute("maximumCanEqual");
 						if (typeof maximum === "number" && (instance.getValue() > maximum || (maximumCanEqual === false && instance.getValue() === maximum))) {
-							report.addError(instance, schema, "maximum", "Number is greater then the required maximum value", maximum);
+							report.addError(instance, schema, "maximum", "Number is greater than the required maximum value", maximum);
 						}
 					}
 				}
@@ -2511,7 +2511,7 @@ var exports = exports || this,
 					if (instance.getType() === "array") {
 						minItems = schema.getAttribute("minItems");
 						if (typeof minItems === "number" && instance.getProperties().length < minItems) {
-							report.addError(instance, schema, "minItems", "The number of items is less then the required minimum", minItems);
+							report.addError(instance, schema, "minItems", "The number of items is less than the required minimum", minItems);
 						}
 					}
 				}
@@ -2533,7 +2533,7 @@ var exports = exports || this,
 					if (instance.getType() === "array") {
 						maxItems = schema.getAttribute("maxItems");
 						if (typeof maxItems === "number" && instance.getProperties().length > maxItems) {
-							report.addError(instance, schema, "maxItems", "The number of items is greater then the required maximum", maxItems);
+							report.addError(instance, schema, "maxItems", "The number of items is greater than the required maximum", maxItems);
 						}
 					}
 				}
@@ -2588,7 +2588,7 @@ var exports = exports || this,
 					if (instance.getType() === "string") {
 						minLength = schema.getAttribute("minLength");
 						if (typeof minLength === "number" && instance.getValue().length < minLength) {
-							report.addError(instance, schema, "minLength", "String is less then the required minimum length", minLength);
+							report.addError(instance, schema, "minLength", "String is less than the required minimum length", minLength);
 						}
 					}
 				}
@@ -2609,7 +2609,7 @@ var exports = exports || this,
 					if (instance.getType() === "string") {
 						maxLength = schema.getAttribute("maxLength");
 						if (typeof maxLength === "number" && instance.getValue().length > maxLength) {
-							report.addError(instance, schema, "maxLength", "String is greater then the required maximum length", maxLength);
+							report.addError(instance, schema, "maxLength", "String is greater than the required maximum length", maxLength);
 						}
 					}
 				}
@@ -2722,7 +2722,7 @@ var exports = exports || this,
 						if (typeof maxDecimal === "number") {
 							decimals = instance.getValue().toString(10).split('.')[1];
 							if (decimals && decimals.length > maxDecimal) {
-								report.addError(instance, schema, "maxDecimal", "The number of decimal places is greater then the allowed maximum", maxDecimal);
+								report.addError(instance, schema, "maxDecimal", "The number of decimal places is greater than the allowed maximum", maxDecimal);
 							}
 						}
 					}
@@ -3497,7 +3497,7 @@ var exports = exports || this,
 						minimum = schema.getAttribute("minimum");
 						exclusiveMinimum = schema.getAttribute("exclusiveMinimum") || (!instance.getEnvironment().getOption("strict") && !schema.getAttribute("minimumCanEqual"));
 						if (typeof minimum === "number" && (instance.getValue() < minimum || (exclusiveMinimum === true && instance.getValue() === minimum))) {
-							report.addError(instance, schema, "minimum", "Number is less then the required minimum value", minimum);
+							report.addError(instance, schema, "minimum", "Number is less than the required minimum value", minimum);
 						}
 					}
 				}
@@ -3510,7 +3510,7 @@ var exports = exports || this,
 						maximum = schema.getAttribute("maximum");
 						exclusiveMaximum = schema.getAttribute("exclusiveMaximum") || (!instance.getEnvironment().getOption("strict") && !schema.getAttribute("maximumCanEqual"));
 						if (typeof maximum === "number" && (instance.getValue() > maximum || (exclusiveMaximum === true && instance.getValue() === maximum))) {
-							report.addError(instance, schema, "maximum", "Number is greater then the required maximum value", maximum);
+							report.addError(instance, schema, "maximum", "Number is greater than the required maximum value", maximum);
 						}
 					}
 				}
