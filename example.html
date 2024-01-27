@@ -4,6 +4,19 @@
   <meta charset="utf-8" />
   <title>Getting started with JSON Form</title>
   <link rel="stylesheet" type="text/css" href="deps/opt/bootstrap.css" />
+  <style>
+      .jsonform-required > label:after {
+        content: ' *';
+        color: red;
+      }
+
+      form.jsonform-hasrequired:after {
+        content: '* Required field';
+        display: block;
+        color: red;
+        padding-top: 1em;
+      }
+  </style>
 </head>
 <body>
   <h1>Getting started with JSON Form</h1>
