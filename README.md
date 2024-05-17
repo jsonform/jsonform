@@ -29,7 +29,7 @@ The example below creates a form that asks for the user's name and age. The user
   <head>
     <meta charset="utf-8" />
     <title>Getting started with JSON Form</title>
-    <link rel="stylesheet" style="text/css" href="deps/opt/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="deps/opt/bootstrap.css" />
   </head>
   <body>
     <h1>Getting started with JSON Form</h1>
